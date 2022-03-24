@@ -92,7 +92,7 @@ resource "google_container_aws_node_pool" "this" {
     config_encryption {
       kms_key_arn = var.database_encryption_kms_key_arn
     }
-    instance_type        = "t3.micro"
+    instance_type        = "t3.medium"
     iam_instance_profile = var.iam_instance_profile
     root_volume {
       size_gib    = 30

@@ -85,8 +85,8 @@ resource "google_container_aws_node_pool" "this" {
     max_pods_per_node = 110
   }
   autoscaling {
-    min_node_count = 2
-    max_node_count = 5
+    min_node_count = 1
+    max_node_count = 2
   }
   config {
     config_encryption {

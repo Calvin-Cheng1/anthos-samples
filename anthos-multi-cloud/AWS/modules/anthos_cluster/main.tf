@@ -33,7 +33,7 @@ resource "google_container_aws_cluster" "this" {
   }
   control_plane {
     iam_instance_profile = var.iam_instance_profile
-    instance_type        = "t3.medium"
+    instance_type        = "t3.micro"
     subnet_ids           = var.subnet_ids
     tags = {
       "Name" : "${var.anthos_prefix}-cp"
